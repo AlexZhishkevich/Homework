@@ -1,0 +1,1 @@
+DELETE FROM Role WHERE Name LIKE 'ServiceEngineer';

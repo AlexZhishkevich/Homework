@@ -1,0 +1,1 @@
+DROP TABLE HomeworkDb.dbo.[CatalogGood], HomeworkDb.dbo.[Catalog], HomeworkDb.dbo.[Good];
