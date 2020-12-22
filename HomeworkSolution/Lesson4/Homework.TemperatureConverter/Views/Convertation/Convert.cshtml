@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Convert";
+}
+
+<h3>Convertation result</h3>
+
+<p>@ViewData["OutputMessage"]</p>
+
+<div class="text-center">
+    <a class="nav-link text-dark text-left" asp-controller="Convertation" asp-action="Index"><p class="text-primary">Back</p></a>
+</div>
+<form method="post">
+    <p>
+        <p>Select export mode</p>
+        <input name="selectedIndex" type="radio" value="0" />
+        <span>zip</span> <br />
+        <input name="selectedIndex" type="radio" value="1" />
+        <span>txt</span> <br />
+        <input checked="checked" name="selectedIndex" type="radio" value="2" />
+        <span>byte stream</span>
+    </p>
+    <p>
+        <input type="submit" class="btn btn-primary" asp-controller="Convertation" asp-action="ExportResult" asp-all-route-data='new Dictionary<string,string> { { "selectedIndex", "5" }, {"fahrenheitValue", ViewData["ResultValue"].ToString() } }' value="Export result" />
+    </p>
+</form>

@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <form method="post">
+        <p>
+            <label for="celsiusTemperatureInput">Enter the temperature value in the field below (°C)</label>
+            <input class="w-25 form-control" id="celsiusTemperatureInput" type="number" placeholder="temperature °C" name="inputTemperature" />
+        </p>
+        <p>
+            <input type="submit" class="btn btn-primary" asp-controller="Convertation" asp-action="Convert" value="Convert" />
+        </p>
+    </form>
+
+
+
+
+
+
