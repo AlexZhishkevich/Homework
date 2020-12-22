@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson4", "Lesson4", "{039F0CA1-CA28-4427-9546-942CA1D7A035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework.TemperatureConverter", "Lesson4\Homework.TemperatureConverter\Homework.TemperatureConverter.csproj", "{5ACE31F0-06DD-498D-B205-C993C09E02B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5ACE31F0-06DD-498D-B205-C993C09E02B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ACE31F0-06DD-498D-B205-C993C09E02B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ACE31F0-06DD-498D-B205-C993C09E02B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ACE31F0-06DD-498D-B205-C993C09E02B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5ACE31F0-06DD-498D-B205-C993C09E02B2} = {039F0CA1-CA28-4427-9546-942CA1D7A035}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F4A2D15-CB54-417A-B9DA-EEAC0F369293}
+	EndGlobalSection
+EndGlobal
