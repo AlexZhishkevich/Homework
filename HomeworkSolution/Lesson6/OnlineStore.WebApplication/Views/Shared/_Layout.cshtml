@@ -1,0 +1,89 @@
+﻿@using Microsoft.AspNetCore.Http
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - OnlineStore.WebApplication</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-grid.min.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-reboot.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid">
+                <div class="row row align-items-end ml-3 mt-2">
+                    <div class="col align-self-start">
+                        <h3>Shop</h3>
+                    </div>
+                    <div class="col text-right">
+                        <h5> @GetUserGreetingsText()</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-black-solid mt-2 ml-3 mr-3 mb-3 p-2 rounded row" style="height: 7vh; min-height: 50px;">
+                <div class="col w-25">
+
+                </div>
+                <div class="col w-25">
+                    <div class="row justify-content-sm-center">
+                        <div class="col col-auto p-1 right-divider-solid-black">
+                            <a class="nav-link p-0" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </div>
+                        <div class="col col-auto p-1 right-divider-solid-black">
+                            <a class="nav-link p-0" asp-area="" asp-controller="Home" asp-action="Contacts">Contacts</a>
+                        </div>
+                        <div class="col col-auto p-1">
+                            <a class="nav-link p-0" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col w-50 ">
+                    <form method="post" class="row justify-content-end">
+                        <label class="col col-auto m-1 align-content-end" style="height: 5vh; width: 10vw; min-width: 150px; min-height: 30px">Enter your name:</label>
+                        <input class="col col-auto p-1 m-1" style="height: 4vh; width: 6vw; min-height: 30px" type="text" name="username" />
+                        <input type="submit" class="btn-primary btn-sm col col-auto p-1 m-1 " value="Set" style="width: 5vw; height: 4vh; min-height: 30px">
+                    </form>
+                </div>
+
+            </div>
+        </header>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-auto align-self-start" style="height: 73vh">
+                    @await RenderSectionAsync("ProductCategories", false)
+                </div>
+                <main role="main" class="pb-3 mr-3 col text-center border border-black-dotted border-bolt" style="height: 73vh">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+
+        <footer class="border-top footer text-muted">
+            <div class="border-black-solid bg-dark mt-2 ml-3 mr-3 mb-2 p-0 rounded" style="height: 7vh; min-height: 50px">
+                <div class="row justify-content-sm-center">
+                    &copy; 2020 - OnlineStore.WebApplication - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+    </body>
+</html>
+
+
+@functions 
+{
+    public string GetUserGreetingsText()
+    {
+        var username = Context?.Session?.GetString("username");
+        return !string.IsNullOrEmpty(username) ? $"Greetings, {username}" : "Greetings, unknown friend";
+    }
+}

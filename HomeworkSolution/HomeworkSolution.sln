@@ -5,9 +5,26 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson4", "Lesson4", "{039F0CA1-CA28-4427-9546-942CA1D7A035}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework.TemperatureConverter", "Lesson4\Homework.TemperatureConverter\Homework.TemperatureConverter.csproj", "{5ACE31F0-06DD-498D-B205-C993C09E02B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework.TemperatureConverter", "Lesson4\Homework.TemperatureConverter\Homework.TemperatureConverter.csproj", "{5ACE31F0-06DD-498D-B205-C993C09E02B2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson5", "Lesson5", "{B6C0943C-559D-4280-A8DB-53EF69ADFCA8}"
+	ProjectSection(SolutionItems) = preProject
+		Lesson5\1TaskQuery.sql = Lesson5\1TaskQuery.sql
+		Lesson5\2TaskQuery.sql = Lesson5\2TaskQuery.sql
+		Lesson5\3TaskQuery.sql = Lesson5\3TaskQuery.sql
+		Lesson5\4TaskQuery.sql = Lesson5\4TaskQuery.sql
+		Lesson5\5TaskQuery.sql = Lesson5\5TaskQuery.sql
+		Lesson5\AddCatalogGoodQuery.sql = Lesson5\AddCatalogGoodQuery.sql
+		Lesson5\AddCatalogQuery.sql = Lesson5\AddCatalogQuery.sql
+		Lesson5\AddGoodQuery.sql = Lesson5\AddGoodQuery.sql
+		Lesson5\AddRolesQuery.sql = Lesson5\AddRolesQuery.sql
+		Lesson5\AddUserRoleQuery.sql = Lesson5\AddUserRoleQuery.sql
+		Lesson5\AddUsersQuery.sql = Lesson5\AddUsersQuery.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson6", "Lesson6", "{FFC17B6E-B418-4210-923B-E1129A233F9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.WebApplication", "Lesson6\OnlineStore.WebApplication\OnlineStore.WebApplication.csproj", "{A4589A5F-A601-4DCC-A916-8D9FDA9D1D77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +36,17 @@ Global
 		{5ACE31F0-06DD-498D-B205-C993C09E02B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5ACE31F0-06DD-498D-B205-C993C09E02B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5ACE31F0-06DD-498D-B205-C993C09E02B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4589A5F-A601-4DCC-A916-8D9FDA9D1D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4589A5F-A601-4DCC-A916-8D9FDA9D1D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4589A5F-A601-4DCC-A916-8D9FDA9D1D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4589A5F-A601-4DCC-A916-8D9FDA9D1D77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5ACE31F0-06DD-498D-B205-C993C09E02B2} = {039F0CA1-CA28-4427-9546-942CA1D7A035}
+		{A4589A5F-A601-4DCC-A916-8D9FDA9D1D77} = {FFC17B6E-B418-4210-923B-E1129A233F9A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F4A2D15-CB54-417A-B9DA-EEAC0F369293}

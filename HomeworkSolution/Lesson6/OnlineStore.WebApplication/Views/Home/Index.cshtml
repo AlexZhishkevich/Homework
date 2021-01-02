@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section ProductCategories {
+    @await Html.PartialAsync($"_ProductCategoriesPartialView")
+}
+
+<div class="row h-100">
+    <div class="col-sm-12 m-auto">
+        <div class="row justify-content-sm-center">
+            <div class="card w-auto">Page content</div>
+        </div>
+    </div>
+</div>
