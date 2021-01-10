@@ -30,6 +30,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AsyncExamples", "AsyncExamp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "AsyncExamples\ConsoleApp1\ConsoleApp1.csproj", "{CCA5E7E4-5097-444A-8BB1-9EEFA392FD12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Contracts", "Lesson6\OnlineStore.Contracts\OnlineStore.Contracts.csproj", "{6C2D2EC9-8E7C-4B99-825F-10965CA80A29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{CCA5E7E4-5097-444A-8BB1-9EEFA392FD12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCA5E7E4-5097-444A-8BB1-9EEFA392FD12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCA5E7E4-5097-444A-8BB1-9EEFA392FD12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C2D2EC9-8E7C-4B99-825F-10965CA80A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C2D2EC9-8E7C-4B99-825F-10965CA80A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C2D2EC9-8E7C-4B99-825F-10965CA80A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C2D2EC9-8E7C-4B99-825F-10965CA80A29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +62,7 @@ Global
 		{5ACE31F0-06DD-498D-B205-C993C09E02B2} = {039F0CA1-CA28-4427-9546-942CA1D7A035}
 		{A4589A5F-A601-4DCC-A916-8D9FDA9D1D77} = {FFC17B6E-B418-4210-923B-E1129A233F9A}
 		{CCA5E7E4-5097-444A-8BB1-9EEFA392FD12} = {8BF0431F-1EA5-4FF4-897B-023D22291A3D}
+		{6C2D2EC9-8E7C-4B99-825F-10965CA80A29} = {FFC17B6E-B418-4210-923B-E1129A233F9A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F4A2D15-CB54-417A-B9DA-EEAC0F369293}
