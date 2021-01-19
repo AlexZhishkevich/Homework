@@ -1,0 +1,10 @@
+﻿@model IEnumerable<OnlineStore.Contracts.Models.Catalog>
+
+<menu class="h-100 border border-dark border-rounded border-bolt align-top mt-0 pr-5">
+    @foreach (var item in Model)
+    {
+        <li>
+            <a asp-controller="Home" asp-action="GetGoods" asp-route-id="@item">@Html.DisplayFor(modelItem => item.Name)</a>
+        </li>
+    }
+</menu>
